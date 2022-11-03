@@ -89,49 +89,22 @@
     </header>
 
     <main class="container">
-      <form class="input-group px-5 my-3">
-        <div class="form-floating">
+      <form class="input-group px-5 my-3" id="form-user">
+        <div class="form-floating" >
           <input
             id="search-input"
             type="number"
-            id="form1"
             class="form-control"
             placeholder="Numero de Usuarios a mostrar"
           />
           <label for="form1">Numero de Usuarios a mostrar</label>
         </div>
-        <button id="search-button" type="button" class="btn btn-primary">
+        <button id="search-button" type="submit" class="btn btn-primary">
           <i class="bi bi-search"></i>
         </button>
       </form>
 
-      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-        <div class="col">
-          <div class="nosotros card text-bg-dark">
-            <img class="card-img-top w-100" src="img/dante.jpg" alt="dante" />
-            <div class="card-body">
-              <h5 class="card-title">Lucas Dante Depetris</h5>
-              <h6 class="card-subtitle mb-2">Legajo: 52432</h6>
-              <h6 class="card-subtitle mb-2">Comisión: 3K4</h6>
-              <h6 class="card-subtitle mb-2">
-                Email: Lucas.Depetris@alu.frt.utn.edu.ar
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="nosotros card text-bg-dark">
-            <img class="card-img-top w-100" src="img/santy.jpg" alt="santy" />
-            <div class="card-body">
-              <h5 class="card-title">Santiago Manuel Figueroa</h5>
-              <h6 class="card-subtitle mb-2">Legajo: 52679</h6>
-              <h6 class="card-subtitle mb-2">Comisión: 3K7</h6>
-              <h6 class="card-subtitle mb-2">
-                Email: Manuel.Figueroa@alu.frt.utn.edu.ar
-              </h6>
-            </div>
-          </div>
-        </div>
+      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="section-cards">
       </section>
     </main>
     <footer
@@ -162,5 +135,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="js/usuarios.js"></script>
   </body>
 </html>
