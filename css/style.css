@@ -1,0 +1,21 @@
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.active a {
+    color: red;
+}
+
+.breadcrumb-item a{
+    color: red;
+}
