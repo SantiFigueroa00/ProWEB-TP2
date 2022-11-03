@@ -25,16 +25,23 @@ tablaEstudiante.innerHTML ='';
     <td>${estudiante.apellido}</td>
     <td>${estudiante.nombre}</td>
     <td>${estudiante.nota}</td>
-    <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+    <td><button class="btn btn-danger" onclick='borrarEstudiante("${estudiante.legajo}")'><i class="bi bi-trash"></i></button></td>
   </tr>`;
   });
 }
 
-console.log(tablaEstudiante);
 function agregarEstudiante(e) {
   e.preventDefault();
   let nuevoEst = new Estudiante(nombre.value, apellido.value, legajo.value, nota.value);
   listaEstudiante.push(nuevoEst);
   cargaTabla();
   formEstudiante.reset();
+}
+
+window.borrarEstudiante = function (legajo) {
+  let copiaListaEstudiantes = listaEstudiante.filter(
+    (itemEstudiante) => itemEstudiante.legajo != legajo
+  );
+  listaEstudiante = copiaListaEstudiantes;
+  cargaTabla();
 }
