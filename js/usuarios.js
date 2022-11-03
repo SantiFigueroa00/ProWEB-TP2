@@ -22,7 +22,7 @@ const dibujarCards = (usuarios) =>{
     usuarios.map(usuario =>{
         sectionCards.innerHTML+=`<div class="col">
         <div class="nosotros card text-bg-dark">
-          <img class="" src="${usuario.picture.large}" alt="dante" />
+          <img class="card-img-top" src="${usuario.picture.large}" alt="Imagen de usuario random" />
           <div class="card-body">
             <h5 class="card-title">${usuario.name.first} ${usuario.name.last}</h5>
             <h6 class="card-subtitle mb-2">email: ${usuario.email}</h6>
