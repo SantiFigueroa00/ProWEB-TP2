@@ -1,0 +1,29 @@
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.active a {
+    color: red;
+}
+
+.breadcrumb-item a{
+    color: red;
+}
+
+.card-img-top{
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border: 1px solid red;
+    margin: 10px auto;
+}
